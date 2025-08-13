@@ -1,2 +1,14 @@
+# Python cache
 __pycache__/
-.pytest_cache
+*.py[cod]
+*.pyo
+
+# pytest cache
+.pytest_cache/
+
+# VSCode config folder
+.vscode/
+
+# Environment files
+.env
+*.env
