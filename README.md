@@ -13,9 +13,7 @@ Page Object Model (POM)
 (Opcionalno) pytest-html / Allure za izveštaje
 
 📁 Struktura projekta
-graphql
-Copy
-Edit
+
 orangehrm-tests/
 │
 ├── pages/         # Page Object modeli
@@ -25,24 +23,16 @@ orangehrm-tests/
 ├── requirements.txt
 └── README.md
 
+
 ▶️ Pokretanje testova
 Instaliraj zavisnosti:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Pokreni testove:
 
-bash
-Copy
-Edit
 pytest tests/
 (Opcionalno) Generiši HTML izveštaj:
 
-bash
-Copy
-Edit
 pytest --html=report.html
 
 🧪 Primer test scenarija
