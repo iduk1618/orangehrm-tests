@@ -1,23 +1,69 @@
-# OrangeHRM Automated Tests
+OrangeHRM Automation Tests
+Automatizovani testovi za OrangeHRM aplikaciju, napisani u Python-u koristeći Selenium WebDriver i Pytest framework.
 
-##  Što ovaj repo radi
-Automatizuje testiranje OrangeHRM web aplikacije koristeći Python + pytest + Selenium (Page Object Model).  
-Pokriveni scenariji: login, pretraga zaposlenih, CRUD operacije nad entitetima.
+🔧 Tehnologije korišćene
+Python 3.x
 
-##  Tehnologije
-| Komponenta         | Detalji                        |
-|-------------------|--------------------------------|
-| Python            | verzija 3.x                   |
-| pytest            | test framework                |
-| Selenium WebDriver| browser automation            |
-| pytest-html/allure| izveštaji                     |
-| Page Object Model | organizacija koda             |
+Selenium WebDriver
 
-##  Instalacija
-```bash
-git clone https://github.com/iduk1618/orangehrm-tests.git
-cd orangehrm-tests
-python3 -m venv venv
-source venv/bin/activate
+Pytest
+
+Page Object Model (POM)
+
+(Opcionalno) pytest-html / Allure za izveštaje
+
+📁 Struktura projekta
+graphql
+Copy
+Edit
+orangehrm-tests/
+│
+├── pages/         # Page Object modeli
+├── tests/         # Test slučajevi
+├── utils/         # Pomoćne funkcije (npr. lokatori, konfiguracije)
+├── conftest.py    # Pytest konfiguracija i fixture-i
+├── requirements.txt
+└── README.md
+
+▶️ Pokretanje testova
+Instaliraj zavisnosti:
+
+bash
+Copy
+Edit
 pip install -r requirements.txt
-cp .env.example .env  # unesi URL, korisnika, lozinku
+Pokreni testove:
+
+bash
+Copy
+Edit
+pytest tests/
+(Opcionalno) Generiši HTML izveštaj:
+
+bash
+Copy
+Edit
+pytest --html=report.html
+
+🧪 Primer test scenarija
+
+Valid login
+
+Invalid login
+
+Navigacija kroz dashboard
+
+Provera vidljivosti UI elemenata
+
+✅ TODO
+ Dodati PyTest izveštaje
+
+ Pokriti edge-case testove
+
+ CI integracija (GitHub Actions)
+
+📌 Napomene
+Ovaj projekat koristi Page Object Model kako bi odvojio logiku interakcije sa stranicama od samih testova.
+
+👨‍💻 Autor
+Ivan Djukanović - GitHub
